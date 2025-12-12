@@ -10,6 +10,9 @@
 }
 .nav__link.link__inactive {
     pointer-events: none;
+    text-decoration: none;
+    color: gray;
+    opacity: 0.8;
 }
 .main {
     background-color: rgb(120, 120, 120);
