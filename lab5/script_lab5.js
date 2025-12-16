@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function()
         if (confirm("Saved data: " + document.cookie + "\nUse this data?"))
         {
             let minimumFromCookie = document.cookie;
-            minimumFromCookie = minimumFromCookie.slice(minimumFromCookie.indexOf("="), minimumFromCookie.indexOf(";"));
+            minimumFromCookie = minimumFromCookie.slice(minimumFromCookie.indexOf("=") + 1);
             document.querySelector(".main__form").innerHTML = "Minimum value (stored in cookie): " + minimumFromCookie;
         }
         else
