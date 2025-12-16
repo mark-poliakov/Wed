@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", function()
         if (confirm("Saved data: " + document.cookie + "\nUse this data?"))
         {
             let minimumFromCookie = document.cookie;
+            console.log("Index of = " + minimumFromCookie.indexOf("=") + ", index of ; " + minimumFromCookie.indexOf(";"));
             minimumFromCookie = minimumFromCookie.substring(minimumFromCookie.indexOf("="), minimumFromCookie.indexOf(";"));
             document.querySelector(".main__form").innerHTML = "Minimum value (stored in cookie): " + minimumFromCookie;
         }
         else
         {
-            console.log("canceled confirmation");
             document.cookie = "minimum=";
         }
     }
