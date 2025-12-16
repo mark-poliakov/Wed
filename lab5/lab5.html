@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            With Script
+        </title>
+        <link rel="stylesheet" href="style_lab5.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">
+                Page with scripts added
+            </h1>
+            <nav class="header__nav">
+                <a href="#" class="nav__link link__inactive">Current page</a>
+                <a href="#" class="nav__link link__inactive">Not available</a>
+                <a href="#" class="nav__link link__inactive">Not available</a>
+            </nav>
+        </header>
+        <section class="main">
+            <div class="main__left">
+                <p>Scripts were attached to this page thus you can press different buttons or fill inputs and see what hapens!</p>
+                <img src="images/3d-space-wallpaper-preview.jpg" class="tableImage">
+                <p>Move your cursor over the image above to make table creation form appear!</p>
+            </div>
+            <div class="main__container">
+                <div class="main__header">
+                    <h2>Under hr tag there are all options</h2>
+                </div>
+                <div class="main__inner__container">
+                    <div class="main__content">
+                        <h3>Repositioning</h3>
+                        <p>When small width of window makes it impossible to comfortably position all elements in a single row,
+                            here comes another version of the page that perfectly solve this problem by positioning elements in
+                            several rows or even in one column - another direction. The browser automatically detects the size of the 
+                            window and decides which version is to be applied.
+                        </p>
+                        <p>Try to decrease your window size. At some point left part will move to the bottom and will appear after main content block.
+                            And there will be another point (500px) when all blocks will be placed in one column.
+                        </p>
+                        <br>
+                        <h3>
+                            This is very cool
+                        </h3>
+                        <p>All users despite their device screen's size will have fun reading that adaptive page!</p>
+                        <hr>
+                        <button class="button" id="button__swap">Swap Header and Footer contents</button>
+                        <p id="areaResult"></p>
+                        <div class="main__form">
+                            <label>First Number: </label>
+                            <input type="number"><br>
+                            <label>Second Number: </label>
+                            <input type="number"><br>
+                            <label>Third Number: </label>
+                            <input type="number"><br>
+                            <label>Fourth Number: </label>
+                            <input type="number"><br>
+                            <label>Fifth Number: </label>
+                            <input type="number"><br>
+                            <label>Sixth Number: </label>
+                            <input type="number"><br>
+                            <label>Seventh Number: </label>
+                            <input type="number"><br>
+                            <label>Eighth Number: </label>
+                            <input type="number"><br>
+                            <label>Nineth Number: </label>
+                            <input type="number"><br>
+                            <label>Tenth Number: </label>
+                            <input type="number"><br>
+                            <!--<input type="submit" value="Display Minimum Value!" id="button__min">
+                        -->
+                            <button id="button__min">Display Minimum Value!</button>
+                        </div>
+                        <p class="cookie__data">Refresh page to see cookie working!</p>
+                        <label>Do make text on the right bold?</label>
+                        <input type="checkbox" id="checkbox__bold">
+                        <button class="button" id="button__clearbold">Clear "boldness"</button><br>
+                    </div>
+                    <div class="main__right">
+                        <p>Set check mark in a checkbox, then make some element focused and see how this text become bold!</p>
+                        <p>To remove "boldness" press a button near the checkbox.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            Fifth laboratory work
+            <a href="../index.html">See others laboratory works</a>
+        </footer>
+
+        <script src="script_lab5.js"></script>
+    </body>
+</html>
