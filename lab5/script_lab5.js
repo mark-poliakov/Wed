@@ -42,7 +42,7 @@ document.getElementById("button__min").addEventListener("click", getMinValue);
 
 document.addEventListener("DOMContentLoaded", function()
 {
-    if (document.cookie != "")
+    if (document.cookie != "minimum=" || document.cookie != "")
     {
         if (confirm("Saved data: " + document.cookie + "\nUse this data?"))
         {
@@ -52,7 +52,8 @@ document.addEventListener("DOMContentLoaded", function()
         }
         else
         {
-            document.cookie = "";
+            console.log("canceled confirmation");
+            document.cookie = "minimum=";
         }
     }
 });
