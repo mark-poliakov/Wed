@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Carousel
+        </title>
+        <link rel="stylesheet" href="style_lab6.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">
+                Client Page - Edit Carousel
+            </h1>
+            <nav class="header__nav">
+                <a href="client.html" class="nav__link link__inactive">Editing</a>
+                <a href="#" class="nav__link link__inactive">Unavailable</a>
+            </nav>
+        </header>
+        <section class="main">
+            <div class="main__left">
+                <p>Carousel is an interesting object!</p>
+            </div>
+            <div class="main__container">
+                <div class="main__header">
+                    <h2>Carousel</h2>
+                </div>
+                <div class="main__inner__container">
+                    <div class="main__content">
+                        <h3>Editing Carousel</h3>
+                        <p>Type some content you want to add to the carousel, then click the button below.</p>
+                        <input type="text" id="carouselInput" placeholder="Some text...">
+                        <button id="buttonAdd">Create new slide</button>
+                        <button id="buttonRemove">Remove current slide</button>
+                        <p id="operationsResults"></p>
+                        <div class="carousel">
+                            <button class="carousel__button" id="buttonLeft">&lt;</button>
+                            <button class="carousel__button" id="buttonRight">&gt;</button>
+                            <div class="carousel__slider">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            Sixth laboratory work
+            <a href="../index.html">See others laboratory works</a>
+        </footer>
+
+        <script src="script_lab6.js"></script>
+    </body>
+</html>
